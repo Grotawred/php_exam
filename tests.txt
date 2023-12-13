@@ -1,0 +1,100 @@
+
+1)компілюваним
+
+2)6 
+
+3)$x = 5
+
+4)так
+
+5)6
+
+6)isset
+
+7)ні, виведе помилку та завершиться
+
+8)зупиняє роботу циклу
+
+9)так
+
+10)file_get_contents
+
+11)рекурсія
+
+12)через змінну $_POST
+
+13)deletecookie
+
+14)переводить цикл на наступну ітерацію
+
+15)1
+
+16)boolean, integer, float, string, array, object, resource, NULL
+
+17)крапка
+
+18)string
+
+19)function newFunction()
+
+
+
+# 1
+<?php
+
+$rows = 3;
+$columns = 3;
+$depth = 3;
+
+
+$resultArray = array();
+for ($i = 0; $i < $rows; $i++) {
+    $row = array();
+    for ($j = 0; $j < $columns; $j++) {
+        $row[] = array(1, 2, 3);
+    }
+    $resultArray[] = $row;
+}
+
+
+
+print_r($resultArray);
+
+?>
+
+
+# 2
+<?php
+
+$number = 123456;
+
+$numberStr = (string)$number;
+
+$sumOfPairs = 0;
+
+for ($i = 0; $i < strlen($numberStr) - 1; $i += 2) {
+    $pairSum = (int)$numberStr[$i] + (int)$numberStr[$i + 1];
+    $sumOfPairs += $pairSum;
+}
+
+
+echo "Сума пар цифр: $sumOfPairs";
+
+?>
+
+
+
+# 3
+<?php
+
+$rows = 5;
+
+for ($i = 1; $i <= $rows; $i+=2) {
+    echo str_repeat($i, $i);
+    echo PHP_EOL;
+}
+
+?>
+
+
+
